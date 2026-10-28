@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.card{
+    background: #fff;
+    width: 460px;
+    
+    padding: 28px 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.15);
+    border-top: 4px solid #58d6d3;
+}
+
+h1{
+    font-size: 28px;
+    margin-bottom: 4px;
+}
+
+.subtitle{
+    color: #666;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.row{
+    display: flex;
+    gap: 20px;
+}
+
+.input-group{
+    width: 100%;
+    margin-bottom: 14px;
+}
+
+label{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 0;
+}
+
+input{
+    width: 100%;
+    padding: 9px 12px;
+    border: 2px solid #8ee3df;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+    transition: .3s;
+    margin-left: 0;
+    background: #f7f7f7;
+}
+
+input::placeholder{
+    font-size:13px;
+    color:#666;
+}
+
+input:focus{
+    border-color: #35c8c2;
+}
+
+small{
+    display: block;
+    margin-top: 6px;
+    margin-bottom: 22px;
+    color: #555;
+    font-size: 13px;
+    line-height: 1.4;
+}
+.error{
+    color:red;
+    font-size:13px;
+    margin-top:5px;
+    display:block;
+}
+
+.input-error{
+    border:2px solid red !important;
+}
+
+
+.check{
+    margin-bottom: 22px;
+}
+
+.checkbox-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+
+.checkmark{
+    width: 18px;
+    height: 18px;
+    border: 2px solid #35c8c2;
+    border-radius: 4px;
+    position: relative;
+    flex-shrink: 0;
+    background: #fff;
+}
+
+.checkbox-container input:checked + .checkmark::after{
+    content: "✓";
+    position: absolute;
+    left: 3px;
+    top: -2px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+}
+.checkbox-container input{
+    display: none;
+}
+button:disabled{
+    background: #58d6d3;
+    opacity: 0.7;
+}
+
+button{
+    cursor: pointer;
+}
+
+
+button{
+    height: 46px;
+    width: 100%;
+    margin-top: 8px;
+    padding: 0;
+    border: none;
+    border-radius: 10px;
+    background: #58d6d3;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+button:hover{
+    background: #31c0bb;
+}
+
+.login{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.login a{
+    color: #58d6d3;
+    text-decoration: none;
+    
+    font-weight: bold;
+}
+
+.login a:hover{
+    text-decoration: underline;
+}
+
+@media(max-width:700px){
+
+    .card{
+        width:100%;
+        padding:18px;
+    }
+
+    .row{
+        flex-direction: column;
+        gap: 0;
+    }
+}

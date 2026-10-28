@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../cssfiles/dashboard.css">
+</head>
+<body>
+    <div id="left">
+        <div id="profile">
+            <div id="picture">
+                <p id="avatar">DU</p>
+            </div>
+            <div id="user">
+                <p><b id="username">Demo User</b></p>
+                <p id="usermail">demo@webtech.practice</p>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <p class="navtitle"> DASHBOARD</p>
+        <div class="dashcont"><p><a href="./dashboard.html">Overview</a></p></div>
+        <div class="dashcontx"><p><a href="./Profile setting.html">Profile Settings</a></p></div>
+        <div class="dashcontx"><p><a href="./security.html">Security</a></p></div>
+        <div class="dashcontx"><p><a href="./Notificaton.html">Notification</a></p></div>
+        <p class="navtitle"> QUICK ACTION</a></p>
+        <div class="dashcontx"><p><a href="./help.html">Help & Support</a></p></div>
+        <br><br><br><br>
+        <p class="navtitle"> ACCOUNT</p>
+        <div class="dashcontx" onclick="logout()"><p><a>Sign out</a></p></div>
+    </div>
+    <div id="right">
+        <h2 id="header">WebTech Practice Dashboard</h2>
+        <div id="content">
+            <h2>Welcome back, <span id="rightusername">Demo User</span></h2>
+            <p>Manage your profile settings and account preferences. Your data is securely stored in your browser's local storage.</p>
+            <div id="top">
+                <div class="topcont">
+                    <h3>Theme</h3>
+                    <p>Dark/light mode persisted across all pages</p>
+                    <button></button>
+                </div>
+                <div class="topcont">
+                    <h3>Authentication</h3>
+                    <p>Secure sessions stored in browsers storage</p>
+                    <button></button>
+                </div>
+                <div class="topcont">
+                    <h3>Profile</h3>
+                    <p>20% profile completed into (1/5 fields)</p>
+                    <button></button>
+                </div>
+                <div class="topcont">
+                    <h3>Security</h3>
+                    <p>Password protection and account security</p>
+                    <button></button>
+
+                </div>
+            </div>
+            <h3>Quick Actions</h3>
+            <div id="bottom">
+                <div class="bottomcont" id="editProfile">
+                    <h3>Edit Profile</h3>
+                    <p>Update your personal information</p>
+                </div>
+                <div class="bottomcont" id="changePassword">
+                    <h3>Change Password</h3>
+                    <p>Update your Account security</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../jsfiles/overview.js"></script>
+</body>
+</html>

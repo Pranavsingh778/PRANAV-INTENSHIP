@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../cssfiles/help.css">
+</head>
+<body>
+    <div id="left">
+        <div id="profile">
+            <div id="picture">
+                <p id="avatar">DU</p>
+            </div>
+            <div id="user">
+                <p><b id="username">Demo User</b></p>
+                <p id="usermail">demo@webtech.practice</p>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <p class="navtitle"> DASHBOARD</p>
+        <div class="dashcontx"><p><a href="./dashboard.html">Overview</a></p></div>
+        <div class="dashcontx"><p><a href="./Profile setting.html">Profile Settings</a></p></div>
+        <div class="dashcontx"><p><a href="./security.html">Security</a></p></div>
+        <div class="dashcontx"><p><a href="./Notificaton.html">Notification</a></p></div>
+        <p class="navtitle"> QUICK ACTION</a></p>
+        <div class="dashcont"><p><a href="./help.html">Help & Support</a></p></div>
+        <br><br><br><br>
+        <p class="navtitle"> ACCOUNT</p>
+        <div class="dashcontx" onclick="logout()"><p>Sign out</p></div>
+    </div>
+    <div id="right">
+        <h2 id="header">WebTech Practice Dashboard</h2>
+        <div id="content">
+            <h2>Help & Support</h2>
+            <p id="head"><b><span class="icons">?</span> Frequently Asked Questions</b></p>
+            <div class="topcont">
+                <h3>How do I update my profile?</h3>
+                <p>Click on "Profile Settings" in the sidebar to edit your personal information, address, and other details</p>   
+            </div>
+            <div class="topcont">
+                <h3>Is my data secure?</h3>
+                <p>This is a demo application hat stores data in your browser's localStorage. In a production app, data would be encrypted and <br>stored securely on servers.</p>   
+            </div>
+            <div class="topcont">
+                <h3>How do I change my password?</h3>
+                <p>Go to "Security" in the sidebar, enter your current password, then set and confirm your new pasword.</p>   
+            </div>
+            <br>
+            <h3><span class="icons">📞︎</span> Contact Support</h3>
+            <div class="bottomcont">
+                <p>This is a demonstrationapplication for learning web development. In a real application, you would find contact information and support <br>
+                options here</p>
+            </div>
+        </div>
+    </div>
+    <script src="../jsfiles/help.js"></script>
+</body>
+</html>

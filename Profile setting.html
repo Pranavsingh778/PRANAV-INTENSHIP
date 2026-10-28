@@ -1,0 +1,239 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profile Settings</title>
+
+    <link rel="stylesheet" href="../cssfiles/profile setting.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <div class="profile">
+
+                <div class="avatar" id="User">DU</div>
+
+                <div class="profile-info">
+                    <h3 id="userName">Demo User</h3>
+                    <p id="userEmail">demo@webtech.practice</p>
+                </div>
+
+            </div>
+
+            <!-- Dashboard Menu -->
+            <div class="menu">
+
+                <h4>DASHBOARD</h4>
+
+                <a href="./dashboard.html">Overview</a>
+
+                <a href="#" class="active">Profile Settings</a>
+
+                <a href="./security.html">Security</a>
+
+                <a href="./notification.html">Notification</a>
+
+            </div>
+
+            <!-- Quick Action -->
+            <div class="menu">
+
+                <h4>QUICK ACTION</h4>
+
+                <a href="./Help&Support.html">Help &; Support</a>
+
+            </div>
+
+            
+            <div class="menu account">
+
+                <h4>ACCOUNT</h4>
+
+                <a href="./login.html">Sign out</a>
+
+            </div>
+
+        </aside>
+
+
+        <!-- MAIN CONTENT -->
+        <main class="main">
+
+            <!-- Header -->
+            <header class="header">
+                <h2>WebTech Practice Dashboard</h2>
+            </header>
+
+
+            <!-- Profile Settings Card -->
+            <section class="card">
+
+                <h3 class="card-title">Profile Settings</h3>
+
+                <h5 class="section-title">Personal Information</h5>
+
+
+                <!-- Personal Information -->
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+
+                        <input
+                            type="text"
+                            id="fullName"
+                            placeholder="Demo User"
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="dob">Date of Birth</label>
+
+                        <input
+                            type="date"
+                            id="dob"
+                            max="9999-12-31"
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="demo@gmail.com"
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="+91 9876543210"
+                            inputmode="numeric"
+                            maxlength="10"
+                        >
+                    </div>
+
+                </div>
+
+
+                <!-- Address Information -->
+                <h3 class="address-title">Address Information</h3>
+
+
+                <div class="form-group street-group">
+
+                    <label for="email-input">Street Address</label>
+
+                    <textarea
+                        id="email-input"
+                        placeholder="Enter your complete address"
+                        rows="2"
+                    ></textarea>
+
+                </div>
+
+
+                <!-- Address Grid -->
+                <div class="form-grid address-grid">
+
+                    <div class="form-group">
+                        <label for="pin">PIN Code</label>
+
+                        <input
+                            type="text"
+                            id="pin"
+                            placeholder="123456"
+                            inputmode="numeric"
+                            maxlength="6"
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="city">City</label>
+
+                        <input
+                            type="text"
+                            id="city"
+                            placeholder="Ranchi"
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="Country">Country</label>
+
+                        <input
+                            type="text"
+                            id="Country"
+                            placeholder="India"
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="github">GitHub Profile</label>
+
+                        <input
+                            type="url"
+                            id="github"
+                            placeholder="https://github.com/username"
+                        >
+                    </div>
+
+                </div>
+
+
+                <!-- Buttons -->
+                <div class="button-group">
+
+                    <button
+                        type="button"
+                        class="cancel"
+                        id="cancelBtn"
+                    >
+                        Cancel changes
+                    </button>
+
+                    <button
+                        type="button"
+                        class="save"
+                        id="saveBtn"
+                    >
+                        Save changes
+                    </button>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    
+    <script src="../JS/profilesetting.js"></script>
+
+</body>
+
+</html>

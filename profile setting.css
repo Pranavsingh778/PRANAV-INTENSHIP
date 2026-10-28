@@ -1,0 +1,724 @@
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   2. BODY AND HTML
+========================================= */
+
+html {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f0f2f5;
+    color: #222;
+    font-size: 14px;
+    overflow-x: hidden;
+}
+
+
+/* =========================================
+   3. MAIN CONTAINER
+========================================= */
+
+.container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========================================
+   4. SIDEBAR
+========================================= */
+
+.sidebar {
+    width: 250px;
+    min-width: 250px;
+    min-height: 100vh;
+
+    background: #ffffff;
+    border-right: 1px solid #c5eeee;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =========================================
+   5. PROFILE INFORMATION
+========================================= */
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 22px 18px;
+
+    border-bottom: 1px solid #bcebea;
+}
+
+
+/* AVATAR */
+
+.avatar {
+    width: 45px;
+    height: 45px;
+
+    background: #102b69;
+    color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    flex-shrink: 0;
+}
+
+
+/* PROFILE NAME */
+
+.profile-info h3 {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #111827;
+}
+
+
+/* PROFILE EMAIL */
+
+.profile-info p {
+    font-size: 11px;
+    color: #555;
+    overflow-wrap: anywhere;
+}
+
+
+/* =========================================
+   6. SIDEBAR MENU
+========================================= */
+
+.menu {
+    padding: 25px 16px 8px;
+}
+
+
+/* MENU HEADING */
+
+.menu h4 {
+    font-size: 12px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+
+/* MENU LINKS */
+
+.menu a {
+    display: block;
+
+    text-decoration: none;
+    color: #222;
+
+    padding: 12px 14px;
+    margin-bottom: 5px;
+
+    border-radius: 8px;
+
+    font-size: 13px;
+
+    transition: 0.2s;
+}
+
+
+/* MENU HOVER */
+
+.menu a:hover {
+    background: #edf8fa;
+}
+
+
+/* ACTIVE MENU */
+
+.menu a.active {
+    background: #f0f4f6;
+    border: 1px solid #65d7d2;
+    padding: 11px 13px;
+}
+
+
+/* ACCOUNT MENU */
+
+.menu.account {
+    margin-top: auto;
+    padding-bottom: 25px;
+}
+
+
+/* =========================================
+   7. MAIN CONTENT
+========================================= */
+
+.main {
+    flex: 1;
+    min-width: 0;
+    min-height: 100vh;
+
+    background: #f0f2f5;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =========================================
+   8. HEADER
+========================================= */
+
+.header {
+    width: 100%;
+    min-height: 68px;
+
+    background: #102b69;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 32px;
+
+    color: #ffffff;
+
+    flex-shrink: 0;
+}
+
+
+/* HEADER TITLE */
+
+.header h2 {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+
+/* =========================================
+   9. PROFILE SETTINGS CARD
+========================================= */
+
+.card {
+    background: #ffffff;
+
+    /* FULL AVAILABLE WIDTH */
+
+    width: calc(100% - 36px);
+    max-width: none;
+
+    /* FULL SCREEN HEIGHT */
+
+    min-height: calc(100vh - 108px);
+
+    margin: 20px auto;
+
+    padding: 35px 40px;
+
+    border: 1px solid #c5eeee;
+    border-top: 3px solid #61d8d2;
+
+    border-radius: 20px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================
+   10. CARD TITLE
+========================================= */
+
+.card-title {
+    font-size: 22px;
+    font-weight: bold;
+
+    color: #202020;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================================
+   11. SECTION TITLE
+========================================= */
+
+.section-title {
+    font-size: 16px;
+    font-weight: bold;
+
+    margin-bottom: 22px;
+
+    color: #222;
+}
+
+
+/* =========================================
+   12. FORM GRID
+========================================= */
+
+.form-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    column-gap: 35px;
+    row-gap: 25px;
+
+    width: 100%;
+}
+
+
+/* =========================================
+   13. FORM GROUP
+========================================= */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 0;
+}
+
+
+/* =========================================
+   14. FORM LABELS
+========================================= */
+
+.form-group label {
+    font-size: 13px;
+    font-weight: 600;
+
+    margin-bottom: 10px;
+
+    color: #333;
+}
+
+
+/* =========================================
+   15. INPUT FIELDS AND TEXTAREA
+========================================= */
+
+.form-group input,
+.form-group textarea {
+    display: block;
+
+    width: 100%;
+    min-width: 0;
+
+    border: 1px solid transparent;
+    outline: none;
+
+    background: #f0f2f4;
+
+    border-radius: 11px;
+
+    padding: 15px 16px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 14px;
+    color: #222;
+
+    transition: 0.2s;
+}
+
+
+/* INPUT FOCUS */
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #62d5d0;
+
+    background: #ffffff;
+
+    box-shadow: 0 0 0 3px rgba(98, 213, 208, 0.12);
+}
+
+
+/* PLACEHOLDER */
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #666;
+    font-size: 13px;
+}
+
+
+/* DATE INPUT */
+
+.form-group input[type="date"] {
+    min-height: 48px;
+}
+
+
+/* =========================================
+   16. ADDRESS SECTION
+========================================= */
+
+.address-title {
+    font-size: 18px;
+    font-weight: bold;
+
+    margin-top: 32px;
+    margin-bottom: 22px;
+
+    color: #202020;
+}
+
+
+/* STREET ADDRESS */
+
+.street-group {
+    margin-bottom: 25px;
+}
+
+
+/* ADDRESS TEXTAREA */
+
+.street-group textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+
+
+/* ADDRESS GRID */
+
+.address-grid {
+    row-gap: 25px;
+}
+
+
+/* =========================================
+   17. BUTTON CONTAINER
+========================================= */
+
+.button-group {
+    display: flex;
+    justify-content: flex-end;
+
+    gap: 14px;
+
+    margin-top: 32px;
+
+    width: 100%;
+}
+
+
+/* =========================================
+   18. COMMON BUTTON STYLE
+========================================= */
+
+.button-group button {
+    min-width: 155px;
+
+    padding: 15px 20px;
+
+    border-radius: 11px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+/* =========================================
+   19. CANCEL BUTTON
+========================================= */
+
+.cancel {
+    background: #ffffff;
+
+    color: #333;
+
+    border: 1px solid #72dcd7;
+}
+
+
+/* CANCEL HOVER */
+
+.cancel:hover {
+    background: #effafa;
+}
+
+
+/* =========================================
+   20. SAVE BUTTON
+========================================= */
+
+.save {
+    background: #4fcac4;
+
+    color: #ffffff;
+
+    border: 1px solid #4fcac4;
+}
+
+
+/* SAVE HOVER */
+
+.save:hover {
+    background: #32b7b1;
+}
+
+
+/* =========================================
+   21. TABLET RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .sidebar {
+        width: 210px;
+        min-width: 210px;
+    }
+
+    .card {
+        width: calc(100% - 24px);
+        padding: 28px 24px;
+    }
+
+    .form-grid {
+        column-gap: 20px;
+        row-gap: 22px;
+    }
+
+    .header {
+        padding: 0 22px;
+    }
+}
+
+
+/* =========================================
+   22. MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 600px) {
+
+    /* MAIN LAYOUT */
+
+    .container {
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+
+    /* SIDEBAR */
+
+    .sidebar {
+        width: 100%;
+        min-width: 0;
+        min-height: auto;
+
+        border-right: none;
+        border-bottom: 1px solid #c5eeee;
+    }
+
+
+    /* PROFILE */
+
+    .profile {
+        padding: 14px 16px;
+    }
+
+
+    /* MENU */
+
+    .menu {
+        padding: 10px 12px;
+    }
+
+    .menu h4 {
+        margin-bottom: 8px;
+    }
+
+    .menu a {
+        display: inline-block;
+        margin-right: 5px;
+        padding: 10px;
+    }
+
+    .menu a.active {
+        padding: 9px;
+    }
+
+
+    /* ACCOUNT MENU */
+
+    .menu.account {
+        margin-top: 0;
+        padding-bottom: 12px;
+    }
+
+
+    /* MAIN CONTENT */
+
+    .main {
+        width: 100%;
+        min-height: 100vh;
+    }
+
+
+    /* HEADER */
+
+    .header {
+        width: 100%;
+        min-height: 58px;
+        padding: 0 16px;
+    }
+
+    .header h2 {
+        font-size: 16px;
+    }
+
+
+    /* CARD */
+
+    .card {
+        width: calc(100% - 20px);
+        max-width: none;
+
+        min-height: auto;
+
+        margin: 12px auto;
+        padding: 24px 16px;
+
+        border-radius: 14px;
+    }
+
+
+    /* CARD TITLE */
+
+    .card-title {
+        font-size: 20px;
+        margin-bottom: 22px;
+    }
+
+
+    /* SECTION TITLE */
+
+    .section-title {
+        font-size: 15px;
+        margin-bottom: 18px;
+    }
+
+
+    /* FORM GRID */
+
+    .form-grid {
+        grid-template-columns: minmax(0, 1fr);
+
+        column-gap: 0;
+        row-gap: 20px;
+    }
+
+
+    /* LABEL */
+
+    .form-group label {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+
+
+    /* INPUTS */
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 14px;
+        padding: 13px;
+    }
+
+
+    /* ADDRESS */
+
+    .address-title {
+        font-size: 17px;
+        margin-top: 25px;
+        margin-bottom: 18px;
+    }
+
+    .street-group {
+        margin-bottom: 20px;
+    }
+
+    .street-group textarea {
+        min-height: 80px;
+    }
+
+
+    /* BUTTONS */
+
+    .button-group {
+        flex-direction: column-reverse;
+
+        gap: 10px;
+        margin-top: 25px;
+    }
+
+    .button-group button {
+        width: 100%;
+        min-width: 0;
+
+        padding: 14px;
+        font-size: 13px;
+    }
+
+}
+
+
+/* =========================================
+   23. VERY SMALL MOBILE SCREENS
+========================================= */
+
+@media (max-width: 360px) {
+
+    .card {
+        width: calc(100% - 14px);
+        padding: 20px 12px;
+    }
+
+    .card-title {
+        font-size: 18px;
+    }
+
+    .header h2 {
+        font-size: 14px;
+    }
+
+    .menu a {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+}
+

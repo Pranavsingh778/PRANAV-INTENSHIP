@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../cssfiles/notification.css">
+</head>
+<body>
+    <div id="left">
+        <div id="profile">
+            <div id="picture">
+                <p id="avatar">DU</p>
+            </div>
+            <div id="user">
+                <p><b id="username">Demo User</b></p>
+                <p id="usermail">demo@webtech.practice</p>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <p class="navtitle"> DASHBOARD</p>
+        <div class="dashcontx"><p><a href="./dashboard.html">Overview</a></p></div>
+        <div class="dashcontx"><p><a href="./Profile setting.html">Profile Settings</a></p></div>
+        <div class="dashcontx"><p><a href="./security.html">Security</a></p></div>
+        <div class="dashcont"><p><a href="./Notificaton.html">Notification</a></p></div>
+        <p class="navtitle"> QUICK ACTION</a></p>
+        <div class="dashcontx"><p><a href="./help.html">Help & Support</a></p></div>
+        <br><br><br><br>
+        <p class="navtitle"> ACCOUNT</p>
+        <div class="dashcontx" onclick="logout()"><p><a>Sign out</a></p></div>
+    </div>
+    <div id="right">
+        <h2 id="header">WebTech Practice Dashboard</h2>
+        <div id="content">
+            <h2>Notifications</h2>
+            <p class="notihead"><b><span>🔔</span> Notification Preferences</b></p>
+            <p class="notip2">Manage how and when you recieve notification about your account activity</p>
+            <div id="top">
+                <div class="topcont">
+                    <p class="tp icons">✉︎</p>
+                    <h3 class="tp">Email Notifications</h3>
+                    <p class="tp">Recieve important updates via email</p>
+                    <div class="tp"><input type="checkbox" checked><span class="checktext">Enable email notification</span></div>
+                </div>
+                <div class="topcont">
+                    <p class="tp icons">🔒︎</p>
+                    <h3 class="tp">Security Alerts</h3>
+                    <p class="tp">Get notified about security changes</p>
+                    <div class="tp"><input type="checkbox" checked><span class="checktext">Enable security alerts</span></div>
+                </div>
+            </div>
+            <h3><span class="bottomhead">🖹</span> Recent Activity</h3>
+            <div id="bottom">
+                <div class="bottomcont">
+                    <input class="tp" type="checkbox" checked>
+                    <h3 class="tp">Profile Updated</h3>
+                    <p class="tp">Your profile information was successfully updated <br>Today</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../jsfiles/notification.js"></script>
+</body>
+</html>

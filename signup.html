@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account Page</title>
+    <link rel="stylesheet" href="../cssfiles/signup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Create your account</h1>
+            <p class="subtitle">Sign up to access the practice dashboard.</p>
+
+            <form id="signupForm" onsubmit="return checkx()">
+
+                <div class="row">
+                    <div class="input-group">
+                        <label>First name</label>
+
+                        <input type="text" id="firstName" placeholder="Enter First Name">
+                        <span id="firstNameError" class="error"></span>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Last Name</label>
+
+                        <input type="text" id="lastName" placeholder="Enter Last Name">
+                         <span id="lastNameError" class="error"></span>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label>Email Address</label>
+
+                    <input type="email" id="email" placeholder="Enter your email address">
+                    <span id="emailError" class="error"></span>
+                </div>
+
+                <div class="row">
+                    <div class="input-group">
+                        <label>Password</label>
+
+                        <input type="password" id="password" placeholder="Enter Password">
+                        <span id="passwordError" class="error"></span>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Confirm Password</label>
+
+                        <input type="password" id="confirmPassword" placeholder="Confirm Password">
+                        <span id="confirmPasswordError" class="error"></span>
+                    </div>
+                </div>
+
+                <small>Use at least 8 characters, with<br>
+                     letter & number</small>
+
+                <div class="check">
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="terms">
+                        <span class="checkmark"></span>
+                        <span>I agree to the Terms</span>
+                    </label>
+                    <span id="termsError" class="error"></span>
+                </div>
+
+                <button type="submit" id="createBtn">Create Account</button>
+
+                <p class="login">
+                    Already have account?
+                    <a href="./login.html">Sign in</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <script src="../jsfiles/signup.js"></script>
+</body>
+</html>

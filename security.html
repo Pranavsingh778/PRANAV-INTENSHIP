@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../cssfiles/security.css">
+</head>
+<body>
+    <div id="left">
+        <div id="profile">
+            <div id="picture">
+                <p id="avatar">DU</p>
+            </div>
+            <div id="user">
+                <p><b id="username">Demo User</b></p>
+                <p id="usermail">demo@webtech.practice</p>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <p class="navtitle"> DASHBOARD</p>
+        <div class="dashcontx"><p><a href="./dashboard.html">Overview</a></p></div>
+        <div class="dashcontx"><p><a href="./Profile setting.html">Profile Settings</a></p></div>
+        <div class="dashcont"><p><a href="./security.html">Security</a></p></div>
+        <div class="dashcontx"><p><a href="./Notificaton.html">Notification</a></p></div>
+        <p class="navtitle"> QUICK ACTION</a></p>
+        <div class="dashcontx"><p><a href="./help.html">Help & Support</a></p></div>
+        <br><br><br><br>
+        <p class="navtitle"> ACCOUNT</p>
+        <div class="dashcontx" onclick="logout()"><p><a>Sign out</a></p></div>
+    </div>
+    <div id="right">
+        <h2 id="header">WebTech Practice Dashboard</h2>
+        <div id="content">
+            <h2>Security Settings</h2>
+            <p><b>Security Settings</b></p>
+            <p class="biohead">Keep your account secure by using a strong password and changing it regularly</p>
+            <div id="topcont">
+                <div class="curpass">
+                    <label for="">Current Password</label>
+                    <br>
+                    <input type="password" id="curpass" placeholder="Enter current pasword">
+                    <span id="curpassError" class="error"></span>
+                </div>
+                <div>
+                    <label for="">New Password</label>
+                    <br>
+                    <input type="password" id="newpass" placeholder="Minimum 8 characters">
+                    <span id="newpassError" class="error"></span>
+                </div>
+                <div id="confpass" style="width: 100%;">
+                    <label for="">Confirm New Password</label>
+                    <br>
+                    <input type="password" id="confnewpass" placeholder="RE-enter new password">
+                    <span id="confpassError" class="error"></span>
+                </div>
+            </div>
+            <div id="btn">
+                <button class="btn1" onclick="changepass()">Update changes</button>
+                <button class="btn2" onclick="clearx()">Clear </button>
+            </div>
+            <hr class="mid">
+            <br>
+            
+            <p><b>Security Information</b></p>
+            <br>
+            <div id="btm">
+                <div class="btmcont">
+                    <p class="emoji">🗓</p>
+                    <p class="sinfo">Account Crated</p>
+                    <p class="btmtxt" id="date">8/31/2026</p>
+                </div>
+                <div class="btmcont">
+                    <p class="emoji">🗓</p>
+                    <p class="sinfo">Last Updated</p>
+                    <p class="btmtxt" id="updated_time">Never Updated</p>
+                </div>
+                <div class="btmcont">
+                    <p class="emoji">🗓</p>
+                    <p class="sinfo">Session</p>
+                    <p class="btmtxt">Current browser session activ</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../jsfiles/security.js"></script>
+</body>
+</html>
